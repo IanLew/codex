@@ -4,9 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeX</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 100px;
+            overflow: hidden;
+        }
+        .root {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .root img {
+          width: 2rem;
+          height: 2rem;
+          display: block;
+        }
+        .root a {
+          display: block;
+          font-size: .2rem;
+        }
+    </style>
 </head>
 <body>
-    <img src="./assets/qrcode.png" alt="qrcode">
-    <a href="itms-services://?action=download-manifest&url=https://ianlew.github.io/codex/assets/manifest.plist">下载APP</a>
+  <div class="root">
+      <img src="./assets/qrcode.png" alt="qrcode">
+      <a href="itms-services://?action=download-manifest&url=https://ianlew.github.io/codex/assets/manifest.plist">下载APP</a>
+  </div>
 </body>
 </html>
